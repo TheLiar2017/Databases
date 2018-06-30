@@ -222,3 +222,24 @@ select rpad('hello',4,'?') as col1, rpad('hello',10,'?') as col2;
 
 **dayofmonth(d)**返回指定日期在一个月中的位置.
 
+---
+
+## 加/解密函数
+
+### 加密函数 password(str)
+
+**password(str)**从原明文密码 str 计算并返回加密后的密码字符串.
+
+> password() 函数在 mysql 服务器的鉴定系统中使用.加密是单向不可逆的.
+
+### 加密函数 MD5(str)
+
+**MD5(str)**为字符串算出一个 MD5  128比特校验和.该值以32位十六进制数字的二进制字符串形式返回.
+
+### 加密函数 encode(str,pswd_Str)
+
+**encode(str,pswd_str)**使用 pswd_str 作为密码,加密 str
+
+### 解密函数 decode(str,pswd_str)
+
+**decode(str,pswd_str)**使用 pswd_str 作为密码,解密 str,str 为 encode()返回的字符串.
