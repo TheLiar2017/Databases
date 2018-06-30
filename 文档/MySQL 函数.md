@@ -198,5 +198,27 @@ select rpad('hello',4,'?') as col1, rpad('hello',10,'?') as col2;
 
 ### 获取月份的函数 month(date) 和 monthname(date)
 
-返回 date 对应的月份,范围在 1~12.
+**month(date)**返回 date 对应的月份,范围在 1~12.
+
+**monthname(date)**返回日期 date 对应月份的英文名.
+
+### 获取星期的函数 dayname(d) , dayofweek(d), weekday(d)
+
+**dayname(d)**:返回 d 对应的工作日的英文名称.
+
+**dayofweek(d)**: 返回 d 对应的一周中的索引. 1 表示周日, 2表示周一....
+
+**weekday(d)**:返回 d 对应的工作日索引. 0表示周一,1表示周二....
+
+### 获得星期数的函数 week(d)和 weekofyear(d)
+
+**week(d)**计算日期 d 是一年中的第几周.
+
+**weekofyear(d)**计算某天位于一年中的第几周.
+
+### 获取天数的函数 dayofyear(d)和 dayofmonth(D)
+
+**dayofyear(d)**返回 d 是一年中的第几天,范围是1~366.
+
+**dayofmonth(d)**返回指定日期在一个月中的位置.
 
